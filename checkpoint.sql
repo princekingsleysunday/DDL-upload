@@ -25,3 +25,6 @@ constraint fk_product_id Foreign key(product_id) references product(product_id)
 
 
 alter table orders add column orderdate date default current_date
+alter table product add column category varchar(20)
+						
+					

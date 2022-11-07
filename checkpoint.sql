@@ -24,4 +24,4 @@ constraint fk_product_id Foreign key(product_id) references product(product_id)
 )
 
 
--- alter table product2 add constraint pkey primary key(product_id)
+alter table orders add orderdate date default current_date

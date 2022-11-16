@@ -8,7 +8,7 @@ customer_id varchar(20) primary key,
 create table product(
 product_id varchar(20) primary key,
 	product_name varchar(20) not null,
-	price int
+	price int check(price>0)
 );
 
 
